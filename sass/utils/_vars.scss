@@ -1,0 +1,30 @@
+:root {
+    /* fonts */
+    --main-font: 'Roboto';
+    --secondary-font: 'Raleway';
+
+    /* text colors */
+    --basic-txt-title: #212121;
+    --basic-txt-subtitle: #757575;
+    --font-txt-cl: rgba(255, 255, 255, 0.6);
+
+    /* bg-colors */
+    --no-accent-btn-bc: #f5f4fa;
+    --hover-focus-btn-bc: #188ce8;
+    --dark-bc: #2f303a;
+    --light-bc: #f5f4fa;
+
+    /* others color */
+    --accent-cl-bc: #2196f3;
+
+    --contrast-light-txt-bc: #ffffff;
+    --contrast-dark-txt-bc: #000000;
+    --icon-cl: #afb1b8;
+
+    /* others */
+
+    --items: 4;
+    --indent: 30px;
+
+    --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

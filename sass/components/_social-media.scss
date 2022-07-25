@@ -1,0 +1,47 @@
+/* Оформлення іконок */
+
+.social-media {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.social-media__item {
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+    
+.social-media__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    
+    border-radius: 50%;
+    
+    transition: color var(--anim), background-color var(--anim);
+
+    &:hover,
+    &:focus {
+        color: var(--contrast-light-txt-bc);
+        background-color: var(--accent-cl-bc);
+    }
+}
+    
+.social-media__link--basic-theme {
+    color: var(--icon-cl);
+}
+    
+   
+.social-media__link--light-theme {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--contrast-light-txt-bc);
+}
+    
+.social-media__icon {
+    fill: currentColor;
+}

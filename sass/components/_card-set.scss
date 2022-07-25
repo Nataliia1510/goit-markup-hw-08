@@ -1,0 +1,26 @@
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(-1 * var(--indent) / 2);
+}
+
+.card-set__item {
+    margin: calc(var(--indent) / 2);
+    flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
+}
+    
+.card-set__link {
+    display: block;
+    
+    position: relative;
+    overflow: hidden;
+    
+    transition: box-shadow var(--anim);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+    

@@ -1,0 +1,230 @@
+/* Modal windows */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+
+  transition: opacity var(--anim-fast), visibility var(--anim-fast);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  height: 581px;
+
+  background-color: var(--contrast-light-txt-bc);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+
+  border: none;
+  border-radius: 50%;
+  background-color: var(--contrast-light-txt-bc);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  transition: color var(--anim);
+}
+
+.modal-close-btn:hover > .close-btn-icon,
+.modal-close-btn:focus > .close-btn-icon {
+  fill: var(--accent-cl-bc);
+}
+
+.contact-form {
+  width: 448px;
+  margin: auto;
+}
+
+.user-subtitle {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--basic-txt-title);
+}
+
+.contact-form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  margin-bottom: 4px;
+
+  color: var(--basic-txt-subtitle);
+}
+
+.contact-form-group {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+
+  position: relative;
+
+  width: 100%;
+  margin: 0 auto 10px;
+}
+
+.contact-form-input {
+  padding-left: 42px;
+
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+
+  transition: border-color var(--anim), color var(--anim);
+
+  cursor: pointer;
+}
+
+.contact-form-input:focus {
+  border-color: var(--accent-cl-bc);
+}
+
+.contact-form-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 15px;
+
+  padding: 3px;
+
+  fill: var(--basic-txt-title);
+}
+
+.contact-form-input:focus + .contact-form-icon {
+  fill: var(--accent-cl-bc);
+}
+
+.contact-form-feedback {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-feedback {
+  height: 120px;
+  padding-left: 16px;
+  padding-top: 12px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+
+  transition: border-color var(--anim);
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form-feedback:focus {
+  border-color: var(--accent-cl-bc);
+}
+
+.form-checkbox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.form-checkbox-castom {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 0.2px solid var(--basic-txt-title);
+  border-radius: 2px;
+
+  width: 16px;
+  height: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  transition: background-color var(--anim), border-color var(--anim);
+}
+
+.form-checkbox-icon {
+  fill: var(--contrast-light-txt-bc);
+}
+
+.form-checkbox-input:checked + .form-checkbox-castom {
+  background-color: var(--accent-cl-bc);
+  border-color: var(--contrast-light-txt-bc);
+}
+
+.form-checkbox-agreement {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  margin-left: 8px;
+
+  color: var(--basic-txt-subtitle);
+}
+
+.form-checkbox-agreement-on {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+
+  color: var(--accent-cl-bc);
+}
+
+.btn-contact-form {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  padding: 10px 55px;
+  margin: auto;
+}

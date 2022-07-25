@@ -1,0 +1,33 @@
+/* Feature section */
+
+.feature {
+  padding-bottom: 0;
+}
+
+.feature__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+}
+
+.feature__subtitle {
+  margin-bottom: 10px;
+}
+
+.feature__subtitle--basic {
+  color: var(--basic-txt-title);
+}
+
+.feature__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

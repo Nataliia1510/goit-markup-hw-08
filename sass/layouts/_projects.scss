@@ -1,0 +1,48 @@
+/* Projects section */
+
+.projects__card {
+  --items: 3;
+}
+
+.projects__wrapper {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.projects__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--basic-txt-title);
+
+  margin-bottom: 4px;
+}
+
+.projects__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--basic-txt-subtitle);
+}
+
+.projects__box {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio__overlay {
+  transform: translateY(100%);
+
+  color: var(--contrast-light-txt-bc);
+
+  transition: transform var(--anim);
+
+  .card-set__link:hover &,
+  .card-set__link:focus & {
+    transform: translateY(0);
+  }
+}

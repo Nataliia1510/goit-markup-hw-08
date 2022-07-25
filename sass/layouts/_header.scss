@@ -1,0 +1,17 @@
+/* Header section */
+
+.header {
+  background-color: var(--contrast-light-txt-bc);
+
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
