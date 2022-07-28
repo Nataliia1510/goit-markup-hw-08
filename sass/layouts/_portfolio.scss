@@ -1,13 +1,31 @@
 /* Portfolio html */
 
 .portfolio {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .portfolio__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 34px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__item:not(:last-child) {
@@ -16,6 +34,8 @@
 
 .portfolio__btn {
   display: inline-block;
+
+  box-shadow: none;
 
   font-weight: 500;
   line-height: 1.62;
@@ -40,6 +60,9 @@
 }
 
 .portfolio__btn--current {
+  margin-bottom: 21px;
+
   color: var(--contrast-light-txt-bc);
   background-color: var(--accent-cl-bc);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

@@ -12,6 +12,24 @@
 }
 
 .header__logo {
-  margin-right: 93px;
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 87px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 92px;
+  }
 }
 
+.header__contact {
+  display: none;
+  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+     display: block;
+    }
+}

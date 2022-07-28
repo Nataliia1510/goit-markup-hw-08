@@ -6,22 +6,56 @@
 }
 
 .footer-container {
-  display: flex;
-  align-items: flex-start;
+  display: block;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-start;
+    text-align: start;
+  }
+}
+
+.footer-contact--box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.footer-contact__address {
+  display: inline-block;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 76px;
+    margin-right: 0%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+  }
 }
 
 .footer-logo {
   display: block;
-  width: 145px;
+  // width: 145px;
   margin-bottom: 20px;
 }
 
 .footer-contact {
-  width: 231px;
+  width: 232px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 55px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+  }
 }
 
 .footer-contact-link {
@@ -36,8 +70,13 @@
 }
 
 .footer-contact-item {
-  margin-top: 9px;
-  margin-bottom: 9px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contact-list {
@@ -58,27 +97,44 @@
 }
 
 .social-media-group {
-  margin-top: 12px;
-  margin-left: 70px;
+  margin: 60px auto;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 5px;
+    margin-left: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+    margin-left: 70px;
+  }
 }
 
 .subscribe-group {
-  margin-top: 12px;
-  margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+    margin-left: 93px;
+  }
 }
 
 .subscribe-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .subscribe-form-input {
-  width: 358px;
+  width: 450px;
   height: 50px;
-  margin-right: 12px;
+  margin-bottom: 20px;
 
   background-color: transparent;
 
@@ -99,10 +155,20 @@
 
     padding-left: 16px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .subscribe-form-send {
   position: relative;
+  width: 200px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subscribe-btn {
